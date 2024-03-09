@@ -34,17 +34,16 @@ jobs:
             echo "::set-output name=dirty::true"
           fi
 
-      - name: Commit changes if any
-        if: steps.git-status.outputs.dirty
-        run: |
-          git add .
-          git commit -m "Build artifacts"
-          git push
-
       - name: Configure git user
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
+      - name: Commit changes if any
+        run: |
+          git add .
+          git commit -m "Build artifacts" || echo "No changes to commit"
+          git push || echo "No changes to push"
 
       - name: Bump package version and publish to npm
         run: |
