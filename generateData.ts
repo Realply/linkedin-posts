@@ -1,7 +1,16 @@
 import { faker } from "@faker-js/faker";
-import fs from "fs";
+import * as fs from "fs";
 
-function generateFakePost() {
+interface FakePost {
+  id: string;
+  author: string;
+  timestamp: string;
+  content: string;
+  likes: number;
+  comments: number;
+}
+
+function generateFakePost(): FakePost {
   return {
     id: faker.string.uuid(),
     author: faker.person.fullName(),
@@ -12,8 +21,8 @@ function generateFakePost() {
   };
 }
 
-function generatePosts(n) {
-  const posts = [];
+function generatePosts(n: number): FakePost[] {
+  const posts: FakePost[] = [];
   for (let i = 0; i < n; i += 1) {
     posts.push(generateFakePost());
   }
@@ -22,6 +31,7 @@ function generatePosts(n) {
 
 const fakePosts = generatePosts(100);
 
+//Uncomment when running locally
 fs.writeFileSync("fakeLinkedInPosts.json", JSON.stringify(fakePosts, null, 2));
 
 console.log(fakePosts);
