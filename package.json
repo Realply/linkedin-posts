@@ -5,7 +5,7 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "build": "node generateData.ts"
+    "build": "npx tsc generateData.ts"
   },
   "keywords": ["ml", "realply", "dataset"],
   "author": "Timeo Williams",
