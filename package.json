@@ -1,8 +1,8 @@
 {
   "name": "@realply/linkedin-posts",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A dataset for developers at Realply to quickly mock and retrieve synthetic posts data",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "types": "linkedin-posts.d.ts",
   "scripts": {
