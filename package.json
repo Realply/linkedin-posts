@@ -7,10 +7,17 @@
   "scripts": {
     "build": "npx tsc generateData.ts"
   },
-  "keywords": ["ml", "realply", "dataset"],
+  "keywords": [
+    "ml",
+    "realply",
+    "dataset"
+  ],
   "author": "Timeo Williams",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^8.4.1"
+  },
+  "dependencies": {
+    "typescript": "^5.4.2"
   }
 }
