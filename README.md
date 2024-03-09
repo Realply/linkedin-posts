@@ -13,15 +13,16 @@ Node V18+ >
 1. Install the repo
 
 ```bash
-git clone https://github.com/Realply/linkedin-posts.git
+npm install @realply/linkedin-posts
 ```
 
-2. To customize the dataset, make changes to generateData.ts & then run
+2. Usage
 
 ```bash
-node generateData.ts
-```
+import generateData from '@realply/linkedin-posts';
+import fakeLinkedInPosts from '@realply/linkedin-posts/data/fakeLinkedInPosts.json';
 
-at the same level as the dependency.
+// Use generateData and fakeLinkedInPosts as needed
+```
 
 Contributions are welcome :)

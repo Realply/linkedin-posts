@@ -10,7 +10,7 @@ interface FakePost {
   comments: number;
 }
 
-function generateFakePost(): FakePost {
+export function generateFakePost(): FakePost {
   return {
     id: faker.string.uuid(),
     author: faker.person.fullName(),
