@@ -6,7 +6,7 @@
   "type": "module",
   "types": "linkedin-posts.d.ts",
   "scripts": {
-    "build": "npx tsc generateData.ts"
+    "build": "tsc -outDir dist"
   },
   "files": ["data/fakeLinkedInPosts.json", "linkedin-posts.d.ts", "dist"],
   "keywords": ["ml", "realply", "dataset"],

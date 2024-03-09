@@ -16,9 +16,7 @@
     },
     "skipLibCheck": true // Skip type checking of all declaration files (*.d.ts)
   },
-  "include": [
-    "src/**/*" // Include all files in the src directory
-  ],
+  "include": ["index.ts", "generateData.ts"],
   "exclude": [
     "node_modules", // Exclude the node_modules directory
     "**/*.spec.ts" // Exclude test files
