@@ -1,14 +1,14 @@
-###LinkedIn Posts Dataset
+### LinkedIn Posts Dataset
 
 This is a fake dataset to help devs quickly add and generate datasets to be used in ML Operations & testing.
 
-##Getting Started
+## Getting Started
 
-##Requirements
+## Requirements
 
 Node V18+ >
 
-##Installation Steps
+## Installation Steps
 
 1. Install the repo
 
