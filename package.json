@@ -4,9 +4,11 @@
   "description": "A dataset for developers at Realply to quickly mock and retrieve synthetic posts data",
   "main": "server.js",
   "type": "module",
+  "types": "linkedin-posts.d.ts",
   "scripts": {
     "build": "npx tsc generateData.ts"
   },
+  "files": ["data/fakeLinkedInPosts.json", "linkedin-posts.d.ts", "index.js"],
   "keywords": ["ml", "realply", "dataset"],
   "author": "Timeo Williams",
   "license": "ISC",
