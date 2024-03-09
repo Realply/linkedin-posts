@@ -1,0 +1,17 @@
+{
+  "name": "linkedin-posts",
+  "version": "1.0.0",
+  "description": "A dataset for developers at Realply to quickly mock and retrieve synthetic posts data",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": ["ml", "realply", "dataset"],
+  "author": "Timeo Williams",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1"
+  }
+}
