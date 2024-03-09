@@ -1,7 +1,7 @@
 import { faker } from "@faker-js/faker";
 import * as fs from "fs";
 
-interface FakePost {
+export interface FakePost {
   id: string;
   author: string;
   timestamp: string;
